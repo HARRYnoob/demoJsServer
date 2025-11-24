@@ -1,0 +1,20 @@
+{
+  "name": "indianhorizons",
+  "version": "1.0.0",
+  "description": "tourist places recommending project",
+  "homepage": "https://github.com/HARRYnoob/demoJsServer#readme",
+  "bugs": {
+    "url": "https://github.com/HARRYnoob/demoJsServer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HARRYnoob/demoJsServer.git"
+  },
+  "license": "ISC",
+  "author": "harrynoob/Harshit",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
