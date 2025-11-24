@@ -1,5 +1,6 @@
 {
   "name": "indianhorizons",
+  "type": "module",
   "version": "1.0.0",
   "description": "tourist places recommending project",
   "homepage": "https://github.com/HARRYnoob/demoJsServer#readme",
@@ -12,9 +13,11 @@
   },
   "license": "ISC",
   "author": "harrynoob/Harshit",
-  "type": "commonjs",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
