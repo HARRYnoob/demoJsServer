@@ -1,20 +1,16 @@
-import http from 'node:http'
-import {getDataFromDb} from './db.js'
-const PORT = 8000;
-
-const server = http.createServer(async (req,res)  => {
-//     res.write("hello from the server this is the response \n")
-//     res.write("it is response  \n")
-//    res.write("hello from ther server before ending res")
-
-if (req.url === "/getimage" && req.method === "GET"){
-const places =  await getDataFromDb()
-res.write(JSON.stringify(places));
-}
-    res.end()
+import http from 'node:http';
+import { getDataFromDb } from "./db.js";
+const server = http.createServer(async (req,res)=>{
+    const data = await getDataFromDb();
+    if (req.url === "/destinationName/Ladakh" && req.method === "GET"){
+       
+       const result = data.find(p => p.destinationName === "Ladakh")
+       
+        res.end(JSON.stringify(result.shortDescription));
+    }
+   
 })
 
-server.listen(PORT,() => {
-    console.log(`running on the network port ${PORT}`)
+server.listen(8000,()=>{
+    console.log('Server is running on port 8000');
 })
- 

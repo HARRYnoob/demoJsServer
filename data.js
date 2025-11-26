@@ -1,6 +1,6 @@
 export const viewsIndia = [
   {
-    destinationName: "Ladakh (Pangong Tso)",
+    destinationName: "Ladakh",
     placeType: "High-Altitude Mountains & Lake",
     stateRegion: "Ladakh (Union Territory)",
     estimatedCostRange: "High (Variable)",
